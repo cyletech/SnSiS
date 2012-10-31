@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example of using SnSiS</title>
+	<link href="css/example/reset.css" rel="stylesheet">
+	<link href="css/example/main.css" rel="stylesheet">
+	<link href="css/snsis.css" rel="stylesheet">
+	<script src="js/library/jquery-1.8.2.min.js"></script>
+	<script src="js/snsis.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#controllers > span").snsis();
+		});
+	</script>
+</head>
+<body>
+<div class="gray-window">
+  <span class="websymbols close">'</span>
+  <div></div>
+</div>
+<section>
+  
+  <article>
+<!--<span title="Fullscreen" class="websymbols fullscreen">%</span>-->
+   <img src="http://i45.tinypic.com/z4axj.jpg" alt="Doll" title="Doll" class="active">
+    <img src="http://i47.tinypic.com/2q2lf0h.jpg" alt="Pencils" title="Pencils">
+    <img src="http://i46.tinypic.com/2qbhkz8.jpg" alt="Yellow Flower" title="Yellow Flower">
+    <img src="http://i47.tinypic.com/2lvwur.jpg" alt="Girl & Boy" title="Girl & Boy">
+    <img src="http://i49.tinypic.com/34jeue0.jpg" alt="Kissing" title="Kissing">
+    <img src="http://i48.tinypic.com/29xyoso.jpg" alt="Messaging" title="Messaging">
+  </article>
+  <div id="controllers" class="websymbols">
+  <span data-action="previous">
+    &lt;
+  </span>
+  <span data-action="next">
+    &gt;
+  </span>
+</div>
+</section>
+</body>
+</html>
