@@ -1,0 +1,68 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+.icon
+{
+  cursor: default;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  -webkit-touch-callout: none;
+  font-family: "entypo", sans-serif;
+}
+
+#gray-window
+{
+  z-index: 2;
+  background-color: rgba(51,51,51,.7);
+  display: none;
+  top: 0;
+  bottom:0;
+  left:0;
+  right:0;
+  position: absolute;
+  padding: 14px;
+}
+
+#gray-window > .icon
+{
+  color: #000;
+  font-size: 25px;
+}
+
+#gray-window > div
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	box-shadow: 0 0 7px 1px #000;
+}
+
+#container:hover > span{
+  display: block;
+}
+
+#container > span{
+  position: absolute;
+  z-index: 1;
+  top: 11px;
+  font-size: 25px;
+  right: 12px;
+  color: rgba(255,255,255,.5);
+  display: none;
+}
+
+#container > img
+{
+  position: absolute;
+  top: -10px;
+  left: -9px;
+  clip: rect(18px,500px,335px,18px);
+  display: none;
+}
+
+#container{
+  position: relative;
+  overflow: hidden;
+}
