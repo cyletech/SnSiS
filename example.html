@@ -1,42 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-	<title>Example of using SnSiS</title>
-	<link href="css/example/reset.css" rel="stylesheet">
-	<link href="css/example/main.css" rel="stylesheet">
-	<link href="css/snsis.css" rel="stylesheet">
-	<script src="js/library/jquery-1.8.2.min.js"></script>
-	<script src="js/snsis-min.js"></script>
-	<script>
-		$(function(){
-			$("#controllers > span").snsis();
-		});
-	</script>
-</head>
-<body>
-<div class="gray-window">
-  <span class="websymbols close">'</span>
-  <div></div>
-</div>
-<section>
-  
-  <article>
-<!--<span title="Fullscreen" class="websymbols fullscreen">%</span>-->
-   <img src="http://i45.tinypic.com/z4axj.jpg" alt="Doll" title="Doll" class="active">
-    <img src="http://i47.tinypic.com/2q2lf0h.jpg" alt="Pencils" title="Pencils">
-    <img src="http://i46.tinypic.com/2qbhkz8.jpg" alt="Yellow Flower" title="Yellow Flower">
-    <img src="http://i47.tinypic.com/2lvwur.jpg" alt="Girl & Boy" title="Girl & Boy">
-    <img src="http://i49.tinypic.com/34jeue0.jpg" alt="Kissing" title="Kissing">
-    <img src="http://i48.tinypic.com/29xyoso.jpg" alt="Messaging" title="Messaging">
-  </article>
-  <div id="controllers" class="websymbols">
-  <span data-action="previous">
-    &lt;
-  </span>
-  <span data-action="next">
-    &gt;
-  </span>
-</div>
-</section>
-</body>
+  <head>
+	<title>
+      How To Use SnSiS
+    </title>
+    <link href="css/example/reset.css" rel="stylesheet">
+    <link href="css/example/main.css" rel="stylesheet">
+    <link href="css/snsis.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="gray-window">
+      <span class="icon entypo-cancel" title="Close">
+      </span>
+      <div>
+      </div>
+    </div>
+    <div id="wrapper">
+      
+      <div id="container">
+        <img src="img/img_1.jpg" alt="Plaster" title="Plaster" class="active">
+        <img src="img/img_2.jpg" alt="Flying" title="Flying">
+        <img src="img/img_3.jpg" alt="Cat" title="Cat">
+        <img src="img/img_4.jpg" alt="Flower" title="Flower">
+        <img src="img/img_5.png" alt="Dog" title="Dog">
+        <img src="img/img_6.jpg" alt="Warning" title="Warning">
+      </div>
+      <div id="controllers">
+        <span data-do="previous" class="icon entypo-left-open-big">
+        </span>
+        <span data-do="next" class="icon entypo-right-open-big">
+        </span>
+      </div>
+    </div>
+    
+    <script src="js/library/jquery-1.9.0.min.js">
+    </script>
+	<script src="js/snsis.dev.js">
+    </script>
+    <script>
+      $(function(){
+        $("#wrapper").snsis();
+      }
+       );
+    </script>
+  </body>
 </html>
