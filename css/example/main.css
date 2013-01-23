@@ -1,0 +1,49 @@
+body
+{
+  background-color: #E6E6E6;
+}
+
+#wrapper
+{
+  margin: auto;
+  margin-top: 19px;
+  max-width: 500px;
+  max-height: 335px;
+}
+
+#container
+{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 500px;
+  height: 335px;
+  min-height: 335px;
+  min-width: 500px;
+  background-color: #FFF;
+  box-shadow: 0 0 2px 1px #CBCBCB;
+  border-bottom: solid 2px #61B832;
+}
+
+#container > img.active
+{
+  display: block;
+}
+
+#controllers
+{
+  display: block;
+  font-size: 25pt;
+  color: gray;
+  margin-top: 7px;
+}
+
+#controllers > span:hover
+{
+  color: #898989;
+}
+
+#controllers > span:last-child
+{
+  margin-left: 10px;
+}

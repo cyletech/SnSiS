@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+	<title>
+      How To Use SnSiS
+    </title>
+    <link href="css/example/reset.css" rel="stylesheet">
+    <link href="css/example/main.css" rel="stylesheet">
+    <link href="css/snsis.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="gray-window">
+      <span class="icon entypo-cancel" title="Close">
+      </span>
+      <div>
+      </div>
+    </div>
+    <div id="wrapper">
+      
+      <div id="container">
+        <img src="img/img_1.jpg" alt="Plaster" title="Plaster" class="active">
+        <img src="img/img_2.jpg" alt="Flying" title="Flying">
+        <img src="img/img_3.jpg" alt="Cat" title="Cat">
+        <img src="img/img_4.jpg" alt="Flower" title="Flower">
+        <img src="img/img_5.png" alt="Dog" title="Dog">
+        <img src="img/img_6.jpg" alt="Warning" title="Warning">
+      </div>
+      <div id="controllers">
+        <span data-do="previous" class="icon entypo-left-open-big">
+        </span>
+        <span data-do="next" class="icon entypo-right-open-big">
+        </span>
+      </div>
+    </div>
+    
+    <script src="js/library/jquery-1.9.0.min.js">
+    </script>
+	<script src="js/snsis.dev.js">
+    </script>
+    <script>
+      $(function(){
+        $("#wrapper").snsis();
+      }
+       );
+    </script>
+  </body>
+</html>
